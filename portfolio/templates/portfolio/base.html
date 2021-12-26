@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'portfolio/css/estilos.css' %}">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- CSS Custom -->
+        <link rel="stylesheet" href="{% static 'portfolio/css/propios.css' %}">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.6.0/css/font-awesome.css" rel="stylesheet">
+        <title>{% block title %}{% endblock %} | DjangoWeb</title>
+    </head>
+    <body>
+        {% include 'portfolio/navbar.html' %}
+
+        {% block content %}
+        
+        {% endblock %}
+        
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    {% block publicaciones %}{% endblock %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Font Awesome -->
+        <script src="{% static 'portfolio/fontawesome/js/all.min.js' %}"></script>
+        <!-- JS - Bootstrap -->
+        <script src="{% static 'portfolio/libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>

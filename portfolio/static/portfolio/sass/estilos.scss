@@ -1,0 +1,68 @@
+////////////////////////////////////////
+// 1.- Patron de Colores y estilos de Bootstrap
+////////////////////////////////////////
+
+@use 'tipografia';
+@use 'colores';
+
+$dark: #080916; //Bootstrap Style
+$primary: #3772FF; //Bootstrap Style
+$blanco: #FFFFFF;
+$gris: #E5E5E5;
+$gris-fuerte: #b9b6b6;
+$gris-icono-github: #333333;
+
+$navbar-dark-color: $blanco; //Bootstrap Style
+$navbar-dark-hover-color: $gris; //Bootstrap Style
+
+$nav-link-color: $blanco; //Bootstrap Style
+$nav-link-hover-color: $gris-fuerte;
+
+$badge-font-size: 10px;
+$badge-padding-y: 2px;
+$badge-padding-x: 4px;
+
+$progress-border-radius: 35px;
+
+$theme-colors: (
+    "primary": $primary, //Bootstrap Style
+    "dark": $dark, //Bootstrap Style
+    "secondary": $gris-icono-github,
+);
+
+.navbar-toggler:focus {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: 1px 1px 1px 1px;
+    color: $blanco;
+} 
+
+
+.progress-bar {
+    background-color: red;
+}
+////////////////////////////////////////
+// 2.- Seccion para modificar variables de Bootstrap (Verificar documentación SASS)
+////////////////////////////////////////
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+/////////////////////////
+// 3.- Definir estilos personalizados de Bootstrap
+////////////////////////
+
+// Navbar
+
+.navbar-brand {
+    .autor {
+        font-size: 12px;
+        margin: 0;
+    }
+    .logo {
+        font-size: 20px;
+        color: $blanco;
+        font-weight: tipografia.$fw-700;
+    }
+}

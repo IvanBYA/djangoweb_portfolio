@@ -1,0 +1,123 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<!-- Profile -->
+<main class="profile my-lg-5 my-0">
+    <div class="container">
+        <div class="row py-lg-5 py-0">
+            <div class="col-lg-5">
+                <div class="profile-content-left d-flex justify-content-end">
+                    <img src="{% static 'portfolio/img/profile.jpg' %}" alt="" class="profile-picture">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="profile-content-right d-flex flex-column h-100 justify-content-center">
+                    <h1>Ivan Yakab<span class="badge bg-primary ms-2">New</span></h1>
+                    <p class="profesion">Desarrollador Web / Tester</p>
+                    <p class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos enim, excepturi praesentium ab nihil doloribus error ut dolor dignissimos aliquam ex id reprehenderit, rerum optio ea ratione quaerat. Libero?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Habilities -->
+<section class="margin-habilidades">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center mb-5 ">Habilidades</h2>
+            <div class="col-lg-6 col-12 mb-5 mb-lg-o">
+                <div class="h-100 abilities-content-left d-flex justify-content-center flex-column mx-auto p-1">
+                    <h2 class="mb-4">Mira todos mis Proyectos en <span class="fw-700">GitHub</span></h2>
+                    <a href="https://github.com/IvanBYA" target="_blank" class="btn fw-300 btn-secondary mb-4">
+                        <img class="img_icon" src="{% static 'portfolio/img/github_icon.svg' %}">
+                        IvanBYA
+                    </a>
+                    <a href="{% static 'portfolio/pdf/IvanYakab.pdf' %}" target="_blank" class="btn btn-primary text-white fw-bold d-inline">Descargar CV</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 gx-5 px-5">
+                <div class="abilitie">
+                    <div class="abilities-title d-flex align-items-center">
+                        <img src="{% static 'portfolio/img/html.svg' %}" class="icono-barra" alt="Icono">
+                        <p class="mb-0 fs-6">Html</p>
+                    </div>
+                    <div class="progress mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 88%; background: #E34F26; font-size: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="abilitie mt-4">
+                    <div class="abilities-title d-flex align-items-center">
+                        <img src="{% static 'portfolio/img/css.svg' %}" class="icono-barra" alt="Icono">
+                        <p class="mb-0 fs-6">CSS</p>
+                    </div>
+                    <div class="progress mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 80%; background: #3772FF;"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="abilitie mt-4">
+                    <div class="abilities-title d-flex align-items-center">
+                        <img src="{% static 'portfolio/img/javascript.svg' %}" class="icono-barra" alt="Icono">
+                        <p class="mb-0 fs-6">Javascript</p>
+                    </div>
+                    <div class="progress mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 60%; background: #F7DF1E;"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="abilitie mt-4">
+                    <div class="abilities-title d-flex align-items-center">
+                        <img src="{% static 'portfolio/img/python.svg' %}" class="icono-barra" alt="Icono">
+                        <p class="mb-0 fs-6">Python</p>
+                    </div>
+                    <div class="progress mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 40%; background: #4584B6;"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="abilitie mt-4">
+                    <div class="abilities-title d-flex align-items-center">
+                        <img src="{% static 'portfolio/img/django.svg' %}" class="icono-barra" alt="Icono">
+                        <p class="mb-0 fs-6">Django</p>
+                    </div>
+                    <div class="progress mt-3">
+                        <div class="progress-bar" role="progressbar" style="width: 40%; background: #199667;"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Servicios -->
+<section class="mx-5">
+    <div class="contenedor-servicio">
+        <div class="row">
+            <h2 class="text-center mb-5">Servicios</h2>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                <div class="contenido-servicio py-5">
+                    <img src="{% static 'portfolio/img/codigo_icon.svg' %}" alt="Imagen Servicio 3"> 
+                    <h2 class="text-center">Codigo <br>Completo</h2> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                <div class="contenido-servicio py-5">
+                    <img src="{% static 'portfolio/img/diseño_icon.svg' %}" alt="Imagen Servicio 3">
+                    <h2 class="text-center">Diseño UI</h2>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mb-5">
+                <div class="contenido-servicio py-5">
+                    <img src="{% static 'portfolio/img/foco_icon.svg' %}" alt="Imagen Servicio 3">
+                    <h2 class="text-center">Ideas Creativas</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'portfolio/footer.html' %}
+<!-- Font Awesome -->
+<script src="{% static 'portfolio/https://kit.fontawesome.com/576730e48e.js' %}" crossorigin="anonymous"></script>
+{% endblock %}

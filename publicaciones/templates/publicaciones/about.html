@@ -1,0 +1,45 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+<main class="profile my-lg-5 my-0">
+    <div class="container">
+        <div class="row py-lg-2 py-0">
+            <div class="col-lg-12">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="{% static 'portfolio/img/profile.jpg' %}" alt="" class="profile-picture">
+                    <h1>Ivan Yakab</h1>
+                    <p class="profesion">Desarrollador Web / Tester</p>
+                    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quos enim, excepturi
+                        praesentium ab nihil doloribus error ut dolor dignissimos aliquam ex id reprehenderit, rerum
+                        optio ea ratione quaerat. Libero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                        dignissimos ipsam et soluta esse atque delectus sequi voluptatum, numquam odit necessitatibus
+                        nisi nostrum commodi officia ab fuga est, odio ipsa!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
+
+{% block publicaciones %}
+    <h1 class="text-center mb-5">Publicaciones</h1>
+    {% for publication in publications %}
+        <div class="col-lg-4 col-md-12 mb-5 d-flex align-items-center">
+            <img src="{{ publication.image.url }}" alt="Imagen publicacion" class="">
+        </div>
+        <div class="col-lg-8 col-md-12 mb-4">
+            <div>
+                <h2 class="title">{{ publication.title }}</h2>
+                <p>{{ publication.description }}</p>
+                {% if publication.url %}
+                <p><a href="{{ publication.url }}" class="btn btn-secondary">Mas Información</a></p>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+
+{% block title %}
+Portfolio
+{% endblock %}
+
+{% block content %}
+<!-- Portfolio -->
+<main class="portfolio vh-100 mt-5">
+    <div class="contenedor">
+        <div class="proyectos">
+            {% for project in projects %}
+            <div class="proyecto">
+                <img src="{{project.image.url}}" alt="">
+                <div class="contenido-proyecto">
+                    <h3 class="titulo-proyecto py-1 text-center fw-bold mb-0">{{ project.title }}</h3>
+                    <div class="contenido-cuerpo">
+                        <p class="descripcion-proyecto">{{project.description}}</p>
+                    </div>
+                    <div class="botones-proyecto">
+                        <a href="{{project.url_demo}}" class="btn btn-primary text-white"><i class="fas fa-eye me-2"></i>Ver Demo</a>
+                        <a href="{{project.url_github_user}}" class="btn btn-secondary"><i class="fab fa-github me-2"></i>Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}
