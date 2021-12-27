@@ -2,6 +2,17 @@
 
 Este proyecto trata sobre un portafolio de proyectos web, es una pagina realizada en Django, esta pagina se puede administrar desde el administrador de Django gracias al uso de Models en Django. 
 
+# Tecnologías utilizadas
+
+<img align="left" alt="HTML5" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+<img align="left" alt="CSS3" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+<img align="left" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/javascript.svg" width="40pxpx"/>
+<img align="left" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/python.svg" width="40pxpx"/>
+<img align="left" alt="Sass" width="40pxpx" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
+<img src="https://github.com/GerardPuigl/TechnologyStackIcons/blob/main/Logos/bootstrap.svg" alt="bootstrap" align="left" width="40px">
+<img src="https://img.icons8.com/color/48/000000/django.png"/>
+
+
 ## :zap: Funcionalidades
 
 * Agregar publicaciones con imagenes y links de referencia (Titulo de la publicacion, imagen, descripcion, boton para enlace).
