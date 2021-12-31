@@ -12,6 +12,13 @@ Este proyecto trata sobre un portafolio de proyectos web, es una pagina realizad
 <img src="https://github.com/GerardPuigl/TechnologyStackIcons/blob/main/Logos/bootstrap.svg" alt="bootstrap" align="left" width="40px">
 <img src="https://img.icons8.com/color/48/000000/django.png"/>
 
+## Screenshots
+
+| Inicio | Portafolio (Cards) | Sobre mí |
+|--------|------------|----------|
+| ![Captura de pantalla 2021-12-30 204856](https://user-images.githubusercontent.com/81280372/147800183-cf55d12c-5d0a-41b4-9930-c4e3c51aa235.png) | ![Captura de pantalla 2021-12-30 205009](https://user-images.githubusercontent.com/81280372/147800216-40c59f28-1236-4c75-bb79-9b0bc4987ee5.png)| ![Screenshot_1](https://user-images.githubusercontent.com/81280372/147800253-54524123-6cb1-414e-ba74-5f1803444d1b.png)
+ |
+
 
 ## :zap: Funcionalidades
 
